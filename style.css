@@ -1,10 +1,9 @@
 body, html {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
 }
 
 nav {
-    color: red;
+    z-index: 100;
     position: absolute;
 }
 
@@ -23,9 +22,6 @@ nav {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-}
 
 /* .banner-text h1 {
     font-family: "Sacramento", Arial, serif;
@@ -55,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 65px;
     line-height: 1.5;
     font-weight: bold;
-    animation: fadeIn 2.5s ease-out; /* Adjust duration and easing as needed */
+    animation: fadeIn 3s ease-out; /* Adjust duration and easing as needed */
 
 }
 
@@ -73,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 400px) {
     .banner-text .pub {
-        font-size: 2rem;
+        font-size: 27px;
     }
 }
 
@@ -97,7 +93,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
-
+@media only screen and (max-width: 600px) {
+    .animate-image {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
 
 .offcanvas-end {
     max-width: 50%;
@@ -127,12 +128,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    color: white !important;
-    text-align: center;
+    color: #bbb !important;
 }
 
 .nav-link:hover {
-    color: #555;
+    color: white !important;
 }
 
 .dropdown-menu {
@@ -215,6 +215,20 @@ h1, h2, h3, h4, h5, h6 {
     height: 500px;
 }
 
+@media only screen and (max-width: 768px) {
+    .mySlides img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mySlides img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 /* Position the image container (needed to position the left and right arrows) */
 .container-style {
     position: relative;
@@ -292,6 +306,18 @@ color: #f2f2f2;
     height: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+    .demo {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .demo {
+        height: 45px;
+    }
+}
+
 .active, .demo:hover {
     opacity: 1;
 }
@@ -328,11 +354,10 @@ footer {
 }
 
 /* Nouveau style pour la section des labels */
-.labels {
+.lab {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
 }
 
 /* Nouveau style pour chaque label */
