@@ -378,7 +378,11 @@ footer {
 }
 
 .labels a img {
-    width: 150px;
+    width: 100px;
+}
+
+.lab-modif {
+    border-radius: 50%;
 }
 
 
