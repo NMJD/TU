@@ -380,3 +380,16 @@ footer {
 .labels a img {
     width: 150px;
 }
+
+
+.products .col-md-4{
+    margin-top: 10px;
+}
+
+.equipment-card {
+    height: 500px;
+}
+
+.equipment-card img{
+    height: 300px;
+}

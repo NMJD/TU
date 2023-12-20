@@ -65,37 +65,70 @@
     <div class="banner-text">
         <!-- <h1>Trait</h1>
         <p>D'union</p> -->
-        <p class="pub" data-aos="fade-up" data-aos-duration="1000">Organisation de A-Z</p>
+        <p class="pub" data-aos="fade-up" data-aos-duration="1000">Commande</p>
     </div>
 </div>
 
 <main class="container">
 
+    <div class="container mt-5 mb-5 w-75">
+        <h2 class="text-center mb-4">Passez une Commande</h2>
     
-    <section class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="images/gallery-2.jpg" class="img-fluid" alt="Illustration" style="border-radius: 9px;">
+        <!-- Order Form -->
+        <form>
+            <!-- Item Selection -->
+            <div class="mb-3">
+                <label for="itemSelect" class="form-label">Sélectionnez le matériel</label>
+                <select class="form-select" id="itemSelect" required>
+                    <option value="" disabled selected>Choisissez un équipement</option>
+                    <!-- Add options dynamically based on available equipment -->
+                    <option value="tapisRouge">Tapis Rouge</option>
+                    <option value="pelouse">Pelouse synthétique</option>
+                    <option value="barrires">Barrières</option>
+                    <option value="feuxScene">Feux de Scène</option>
+                    <option value="feuxDartifice">Feux d'artifice</option>
+                    <option value="tableRectangulaire">Table rectangulaire</option>
+                    <option value="tableRonde">Table ronde</option>
+                    <option value="mangeDebout">Mange-Debout</option>
+                    <option value="backdrop">Backdrop</option>
+                    <option value="centreTable">Centre de table</option>
+                    <!-- Add more options as needed -->
+                </select>
             </div>
-            <div class="col-md-6 mt-1" style="text-align: justify;">
-                <p class="">
-                    Vous rêvez d'un événement exceptionnel, mais vous ne savez pas par où commencer? Notre service d'organisation de A-Z est conçu pour vous simplifier la vie. Nous prenons en charge tous les détails, de la planification initiale à la réalisation finale, pour que vous puissiez profiter pleinement de votre journée spéciale.
-                </p>
     
-                <p>
-                    Notre équipe expérimentée travaillera en étroite collaboration avec vous pour comprendre vos besoins, vos goûts et vos attentes. Que ce soit un mariage élégant, une fête d'entreprise ou toute autre célébration, nous mettons tout en œuvre pour créer un événement qui restera gravé dans les mémoires.
-                </p>
-    
-                <p>
-                    Nous nous occupons de la recherche de lieux, de la gestion des invitations, de la décoration, de la coordination du jour J, et bien plus encore. Laissez-nous prendre en charge les détails afin que vous puissiez vous concentrer sur ce qui compte vraiment.
-                </p>
-                <a href="contact.html" class="btn btn-anchor">
-                    Nous contacter <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
+            <!-- Quantity -->
+            <div class="mb-3">
+                <label for="quantityInput" class="form-label">Quantité</label>
+                <input type="number" class="form-control" id="quantityInput" placeholder="Entrez la quantité" required>
             </div>
-        </div>
-    </section>
-   
+    
+            <!-- Additional Details -->
+            <div class="mb-3">
+                <label for="detailsTextarea" class="form-label">Détails Supplémentaires</label>
+                <textarea class="form-control" id="detailsTextarea" rows="4" placeholder="Ajoutez des détails supplémentaires"></textarea>
+            </div>
+    
+            <!-- Customer Information -->
+            <h4>Informations du Client</h4>
+            <div class="mb-3">
+                <label for="nameInput" class="form-label">Nom et Prénom</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Entrez votre nom et prénom" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Téléphone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Adresse Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Entrez votre adresse email" required>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Envoyer la Commande</button>
+        </form>
+    </div>
 
 
 </main>
