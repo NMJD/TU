@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -174,6 +175,11 @@ nav {
     background-size: cover;
     color: #fff; /* Couleur du texte sur l'image de fond */
 
+}
+
+.prestations-section a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Nouveau style pour les cartes transparentes */

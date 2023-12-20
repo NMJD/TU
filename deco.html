@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,900;1,300;1,1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="anime/lib/anime.min.js"></script>
 
 </head>
 <body>
@@ -64,47 +65,39 @@
     <div class="banner-text">
         <!-- <h1>Trait</h1>
         <p>D'union</p> -->
-        <p class="pub">Contactez-nous</p>
+        <p class="pub" data-aos="fade-up" data-aos-duration="1000">Décoration</p>
     </div>
 </div>
 
-<main class="container text-center">
+<main class="container">
+
     
-    <section class="container mt-5 mb-5 w-75" style="text-align: justify;">
-        <p class="lead">
-            Bienvenue sur notre page de contact. Nous sommes ravis de vous présenter Trait D'Union, votre agence d'organisation d'événements. Forts d'une expérience de plusieurs années, nous sommes passionnés par la création d'événements mémorables et uniques.
-        </p>
+    <section class="container mb-5 mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/TU/7.jpg" class="img-fluid"  style="border-radius: 9px;" alt="Illustration">
+            </div>
+            <div class="col-md-6" style="text-align: justify;">
+                <p class="lead">
+                    La décoration est l'âme de tout événement. Avec notre service de décoration d'événements, nous créons une atmosphère magique qui éblouit vos invités dès qu'ils franchissent la porte. Que ce soit un mariage romantique, une soirée d'entreprise ou un anniversaire, notre équipe créative se charge de chaque détail pour que votre événement soit exceptionnel.
+                </p>
     
-        <p>
-            Notre équipe dévouée est là pour prendre en charge tous les aspects de votre événement, qu'il s'agisse d'un mariage élégant, d'une fête d'entreprise réussie ou d'une célébration spéciale. Nous mettons tout en œuvre pour transformer vos rêves en réalité.
-        </p>
+                <p>
+                    Nous collaborons étroitement avec vous pour comprendre vos préférences, votre thème et votre vision. Des fleurs exquises aux éclairages élégants, chaque élément de décoration est soigneusement sélectionné pour créer une harmonie visuelle unique. Notre objectif est de transformer votre lieu en un décor qui raconte votre histoire.
+                </p>
     
-        <p>
-            Si vous avez des questions, si vous souhaitez discuter de vos idées ou si vous êtes prêts à commencer la planification de votre événement, n'hésitez pas à nous contacter. Remplissez simplement le formulaire ci-dessous, et nous reviendrons vers vous dès que possible.
-        </p>
+                <p>
+                    Que vous envisagiez une décoration classique, moderne, vintage ou thématique, notre équipe mettra en œuvre son savoir-faire pour rendre vos rêves de décoration réalité. Profitez de votre événement sans souci, en sachant que chaque détail est pris en charge.
+                </p>
+                <a href="contact.html" class="btn btn-anchor">
+                    Nous contacter <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
     </section>
-    
-    <section class="container contact-form mb-5 w-75">
-        <h2 class="text-center mb-4">Contactez-nous</h2>
-        <form action="#" method="post">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-    
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-    
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-    
-            <button type="submit" class="btn btn-success">Envoyer</button>
-        </form>
-    </section>
+   
+
+
 </main>
 
 <footer>
@@ -140,14 +133,13 @@
     </div>
 </footer>
 
-<script>
-    // Trigger animation using JavaScript
-    var element = document.querySelector('.animate__fadeIn');
-    element.classList.add('animate__animated', 'animate__fadeIn');
-</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script src="script.js"></script>
 
 </body>
