@@ -63,13 +63,13 @@ nav {
 
 @media only screen and (max-width: 600px) {
     .banner-text .pub {
-        font-size: 45px;
+        font-size: 49px;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .banner-text .pub {
-        font-size: 31px;
+        font-size: 40px;
     }
 }
 
@@ -89,7 +89,7 @@ nav {
 
 /* Appliquer l'animation à l'image */
 .animate-image {
-    animation: fadeInFromBottom 1s ease-out;
+    animation: fadeInFromBottom 2s ease-out;
     border-radius: 5px;
 }
 
@@ -199,6 +199,10 @@ nav {
 
 
 /* Galerie */
+
+/* .gallery-section {
+    animation: fadeIn 2s ease-out;
+} */
 
 .gallery-description {
     font-size: 18px;
