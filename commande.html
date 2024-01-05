@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="anime/lib/anime.min.js"></script>
-
 </head>
 <body>
 
@@ -75,11 +73,11 @@
         <h2 class="text-center mb-4">Passez une Commande</h2>
     
         <!-- Order Form -->
-        <form>
+        <form id="commandeForm">
             <!-- Item Selection -->
             <div class="mb-3">
                 <label for="itemSelect" class="form-label">Sélectionnez le matériel</label>
-                <select class="form-select" id="itemSelect" required>
+                <select class="form-select" id="itemSelect">
                     <option value="" disabled selected>Choisissez un équipement</option>
                     <!-- Add options dynamically based on available equipment -->
                     <option value="tapisRouge">Tapis Rouge</option>
@@ -99,7 +97,7 @@
             <!-- Quantity -->
             <div class="mb-3">
                 <label for="quantityInput" class="form-label">Quantité</label>
-                <input type="number" class="form-control" id="quantityInput" placeholder="Entrez la quantité" required>
+                <input type="number" class="form-control" id="quantityInput" placeholder="Entrez la quantité">
             </div>
     
             <!-- Additional Details -->
@@ -112,17 +110,17 @@
             <h4>Informations du Client</h4>
             <div class="mb-3">
                 <label for="nameInput" class="form-label">Nom et Prénom</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Entrez votre nom et prénom" required>
+                <input type="text" class="form-control" id="nameInput" placeholder="Entrez votre nom et prénom">
             </div>
 
             <div class="mb-3">
                 <label for="phone" class="form-label">Téléphone</label>
-                <input type="text" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone" required>
+                <input type="text" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone">
             </div>
     
             <div class="mb-3">
                 <label for="emailInput" class="form-label">Adresse Email</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Entrez votre adresse email" required>
+                <input type="email" class="form-control" id="emailInput" placeholder="Entrez votre adresse email">
             </div>
     
             <!-- Submit Button -->
@@ -139,10 +137,13 @@
         <div class="d-flex lab">
                 <div class="labels">
                     <a href="http://www.weddingacademy.fr/label-wedding-expert/">
-                        <img src="https://cdn.shopify.com/s/files/1/1898/8323/files/Label_Wedding_Designer_160x160@2x.png?v=1516801300"/>
+                        <img src="https://cdn.shopify.com/s/files/1/1898/8323/files/Label_Wedding_Designer_160x160@2x.png?v=1516801300" alt="label formation wedding designer"/>
                     </a>
                     <a href="http://www.weddingacademy.fr/label-wedding-expert/">
-                        <img src="images/label1.jpg" class="lab-modif"/>
+                        <img src="images/label1.jpg" class="lab-modif" alt="label formation wedding beutiful"/>
+                    </a>
+                    <a href="https://www.weddingacademy.fr/products/formation-seminaire-wedding-planner">
+                        <img src="https://cdn.shopify.com/s/files/1/1898/8323/files/Label_Wedding_Planner_160x160@2x.png?v=1516801248" alt="label formation wedding planner">
                     </a>
                     <!-- Add more labels as needed -->
                 </div>
@@ -177,7 +178,7 @@
 <script>
     AOS.init();
   </script>
-<script src="script.js"></script>
+<script src="commande.js"></script>
 
 </body>
 </html>
