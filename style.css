@@ -397,3 +397,21 @@ footer {
 .equipment-card img{
     height: 300px;
 }
+
+/*Whatsapp icon*/
+
+/* WhatsApp Floating Button Styles */
+.whatsapp-button {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.fa-square-whatsapp {
+    font-size: 80px;
+    cursor: pointer;
+    color: green;
+}
