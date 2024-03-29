@@ -60,11 +60,19 @@
         </div>
     </nav>
 
-    <div class="banner-text">
-        <!-- <h1>Trait</h1>
-        <p>D'union</p> -->
-        <p class="pub" data-aos="fade-up" data-aos-duration="1000">Commande</p>
+    <!-- Video Banner -->
+    <div class="video-banner">
+        <video autoplay muted loop id="bg-video">
+            <source src="videos/video2.mp4" type="video/mp4">
+            vidéo non supportée.
+        </video>
+
+        <!-- Content Overlaid on Video -->
+        <div class="banner-text">
+            <p class="pub" data-aos="fade-up" data-aos-duration="1000">Le pont entre vous et vos besoins</p>
+        </div>
     </div>
+
 </div>
 
 <main class="container">
@@ -73,11 +81,11 @@
         <h2 class="text-center mb-4">Passez une Commande</h2>
     
         <!-- Order Form -->
-        <form id="commandeForm" action="https://formspree.io/f/xeqyogln" method="POST">
+        <form id="commandeForm" action="https://formspree.io/f/mpzvjjyp" method="POST">
             <!-- Item Selection -->
             <div class="mb-3">
                 <label for="itemSelect" class="form-label">Sélectionnez le matériel</label>
-                <select class="form-select" id="itemSelect">
+                <select class="form-select" id="itemSelect" name="materiel" required>
                     <option value="" disabled selected>Choisissez un équipement</option>
                     <!-- Add options dynamically based on available equipment -->
                     <option value="tapisRouge">Tapis Rouge</option>
@@ -97,30 +105,30 @@
             <!-- Quantity -->
             <div class="mb-3">
                 <label for="quantityInput" class="form-label">Quantité</label>
-                <input type="number" class="form-control" id="quantityInput" placeholder="Entrez la quantité">
+                <input type="number" class="form-control" name="quantite" required id="quantityInput" placeholder="Entrez la quantité">
             </div>
     
             <!-- Additional Details -->
             <div class="mb-3">
                 <label for="detailsTextarea" class="form-label">Détails Supplémentaires</label>
-                <textarea class="form-control" id="detailsTextarea" rows="4" placeholder="Ajoutez des détails supplémentaires"></textarea>
+                <textarea class="form-control" id="detailsTextarea" rows="4" name="details" required placeholder="Ajoutez des détails supplémentaires"></textarea>
             </div>
     
             <!-- Customer Information -->
             <h4>Informations du Client</h4>
             <div class="mb-3">
                 <label for="nameInput" class="form-label">Nom et Prénom</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="Entrez votre nom et prénom">
+                <input type="text" class="form-control" id="nameInput" name="nom" required placeholder="Entrez votre nom et prénom">
             </div>
 
             <div class="mb-3">
                 <label for="phone" class="form-label">Téléphone</label>
-                <input type="text" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone">
+                <input type="text" class="form-control" id="phone" name="telephone" required placeholder="Entrez votre numéro de téléphone">
             </div>
     
             <div class="mb-3">
                 <label for="emailInput" class="form-label">Adresse Email</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="Entrez votre adresse email">
+                <input type="email" class="form-control" id="emailInput" name="mail" required placeholder="Entrez votre adresse email">
             </div>
     
             <!-- Submit Button -->
