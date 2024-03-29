@@ -3,13 +3,17 @@ body, html {
     scroll-behavior: smooth;
 }
 
+.navbar-toggler {
+    background-color: #ddd;
+}
+
 .navbar-nav {
     margin-left: auto; /* Push menu items to the right */
 }
 
 .nav-link {
     color: #888 !important;
-    font-size: 20       px;
+    font-size: 20px;
 }
 
 .nav-link:hover {
@@ -19,6 +23,7 @@ body, html {
 nav {
     z-index: 100;
     position: absolute;
+    background-color: #fff;
 }
 
 .navbar-brand {
